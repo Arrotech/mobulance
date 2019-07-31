@@ -5,4 +5,16 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="RedText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#d65050</item>
+    </style>
+    <style name="RedBackground" parent="TextAppearance.AppCompat">
+        <item name="android:background">#d65050</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>

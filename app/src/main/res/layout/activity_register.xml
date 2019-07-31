@@ -3,61 +3,108 @@
     android:layout_width="match_parent"
     android:padding="10dp"
     android:orientation="vertical"
-    android:background="@drawable/bgreg"
+    android:background="#000000"
     android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logo"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:padding="3dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="50px"
+        android:layout_gravity="center_horizontal"
+        android:text="Create New Account"/>
 
 
     <EditText
         android:id="@+id/etName"
-        android:layout_width="200dp"
-        android:padding="5dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="170dp"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="10dp"
         android:hint="Name"
         android:background="#fff"
-        android:layout_height="35dp" />
+        android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/etAge"
-        android:layout_width="200dp"
-        android:padding="5dp"
+        android:layout_width="170dp"
+        android:padding="10dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="10dp"
-        android:background="#fff"
         android:hint="Age"
-        android:layout_height="35dp" />
+        android:background="#fff"
+        android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/etUsername"
-        android:layout_width="200dp"
-        android:padding="5dp"
+        android:layout_width="170dp"
+        android:drawableLeft="@drawable/user"
+        android:padding="10dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="10dp"
         android:hint="Username"
         android:background="#fff"
-        android:layout_height="35dp" />
+        android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="200dp"
-        android:padding="5dp"
+        android:layout_width="170dp"
+        android:drawableLeft="@drawable/password"
+        android:padding="10dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
         android:inputType="textPassword"
         android:layout_marginBottom="10dp"
         android:hint="Password"
         android:background="#fff"
-        android:layout_height="35dp" />
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/bRegister"
-        android:layout_width="210dp"
+        android:layout_width="170dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
         android:text="Register" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:padding="3dp"
+            android:textColor="#fff"
+            android:text="Already registered?"/>
+
+        <TextView
+            style="@style/RedText"
+            android:id="@+id/tvLoginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:text="Login"/>
+
+    </LinearLayout>
 
 </LinearLayout>

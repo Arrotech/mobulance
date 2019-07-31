@@ -6,12 +6,33 @@
     android:background="@drawable/backg"
     android:layout_height="match_parent">
 
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/logo"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:padding="3dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="50px"
+        android:layout_gravity="center_horizontal"
+        android:text="Login to Your Account"/>
+
     <EditText
         android:id="@+id/etUsername"
-        android:layout_width="160dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="170dp"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="10dp"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:drawableLeft="@drawable/user"
         android:background="#fff"
@@ -19,10 +40,11 @@
 
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="160dp"
+        android:layout_width="170dp"
+        android:padding="10dp"
         android:inputType="textPassword"
         android:layout_marginBottom="10dp"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:drawableLeft="@drawable/password"
         android:background="#fff"
@@ -32,6 +54,7 @@
         android:id="@+id/bLogin"
         android:layout_width="170dp"
         android:layout_marginBottom="10dp"
+        android:background="@drawable/mybutton"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Login" />
@@ -46,16 +69,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:background="#ffffff"
             android:padding="3dp"
+            android:textColor="#fff"
             android:text="Not registered?"/>
 
         <TextView
+            style="@style/RedText"
             android:id="@+id/tvRegisterLink"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:textStyle="bold"
-            android:background="#ffffff"
             android:padding="3dp"
             android:text="Register"/>
 
